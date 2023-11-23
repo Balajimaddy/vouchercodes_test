@@ -5,7 +5,7 @@ let browser;
 
 BeforeAll(async function () {
     if (process.env.npm_config_browser.trim() == "chrome") {
-     browser = await chromium.launch({headless: false, slowMo: 100})
+     browser = await chromium.launch({headless: true, slowMo: 100})
     } else if (process.env.npm_config_browser.true() == "firefox") {
         browser = await firefox.launch({headless: true, slowMo: 100})
     } else {

@@ -50,7 +50,7 @@ class RestaurantVoucherPage extends BasePage {
     }
 
 }
-
+//Converts day argument 2 to 7 to date format LongWeekDay date shortYear
 daySelect = (day) => {
 
     if(day.toLowerCase() === "any" || day.toLowerCase() === "today" || day.toLowerCase() === "tomorrow" ) {
