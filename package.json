@@ -1,0 +1,25 @@
+{
+  "name": "vouchercodes_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env cucumber-js --config=./cucumber.js",
+    "test:chrome": "npm run test --BROWSER='chrome'",
+    "test:firefox": "npm run test --BROWSER='firefox'",
+    "test:webkit": "npm run test --BROWSER='webkit'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.3"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  }
+}
